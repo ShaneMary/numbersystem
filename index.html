@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Disable</title>
+</head>
+<style>
+  input[type="button"] {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+</style>
+<body>
+
+    <a href="#" id="disable" style="text-decoration: none; color:white;">Binary</a>
+    <a href="#" id="enable1" style="text-decoration: none; color:white;">Decimal</a>
+    <a href="#" id="enable2" style="text-decoration: none; color:white;">Octal</a>
+    <a href="#" id="enable3" style="text-decoration: none; color:white;">Hexa Decimal</a>
+    <div id="binary">
+        <p>Decimal: <span id="output"></span></p>
+        <p>Octal: <span id="octoutput"></span></p>
+        <p>Hexadecimal: <span id="hexadecimalOutput"></span></p>
+    </div>
+    <div id="decimal" style="display: none;">
+        <p>Binary: <span id="binaryOutput"></span></p>
+        <p>Octal: <span id="octoutput"></span></p>
+        <p>Hexadecimal: <span id="hexadecimalOutput"></span></p>
+    </div>
+    <div>
+        <input type="text" id="display" ></div>
+       
+    
+    <div>
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="deleteLastDigit()">C</button>
+    <button id="Button7" onclick="appendToDisplay('7')">7</button>
+    <button id="Button8" onclick="appendToDisplay('8')">8</button>
+    <button id="Button9" onclick="appendToDisplay('9')">9</button>
+    <button id="Button" onclick="appendToDisplay('/')">/</button>
+    </div>
+    <div>
+    <button id="ButtonA" onclick="appendToDisplay('A')">A</button>
+    <button id="ButtonB" onclick="appendToDisplay('B')">B</button>
+    <button id="Button4" onclick="appendToDisplay('4')">4</button>
+    <button id="Button5" onclick="appendToDisplay('5')">5</button>
+    <button id="Button6" onclick="appendToDisplay('6')">6</button>
+    <button id="Button" onclick="appendToDisplay('*')">x</button>
+    </div>
+    <div>
+    <button id="ButtonC" onclick="appendToDisplay('C')">C</button>
+    <button id="ButtonD" onclick="appendToDisplay('D')">D</button>
+    <button id="Button1" onclick="appendToDisplay('1')">1</button>
+    <button id="Button2" onclick="appendToDisplay('2')">2</button>
+    <button id="Button3" onclick="appendToDisplay('3')">3</button>
+    <button id="Button" onclick="appendToDisplay('-')">-</button>
+    </div>
+    <div>
+    <button id="ButtonE" onclick="appendToDisplay('E')">E</button>
+    <button id="ButtonF" onclick="appendToDisplay('F')">F</button>
+    <button id="Button0" onclick="appendToDisplay('0')">0</button>
+    <button id="Button" onclick="appendToDisplay('+')">+</button>
+    <button id="Button" onclick="convert()">=</button>
+    </div>
+<script src="system.js">
+ 
+</script>
+
+</body>
+</html>
+
